@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudios</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="menu">
+    <section class="menu__container">
+      <h1 class="menu__logo">Hoja de Vida</h1>
+      <ul class="menu__links">
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Inicio</a>
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="indexInicio.html"class="menu__link menu__link--inside">Sobre mí</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu__item menu__item--show">
+          <a href="#" class="menu__link">Estudios</a>
+          <ul class="menu__nesting">
+            <li class="menu__inside">
+              <a href="indexEstudios.html" class="menu__link menu__link--inside">Estudios Superiores y Estudios Básicos</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item menu__item--show">
+          <a href="indexLaboral.html" class="menu__link">Experiencia laboral</a>
+        </li>
+      </ul>
+      <div class="menu__hamburguer">
+        <img src="icon/menu.png" class="menu_img">
+      </div>
+    </section>
+  </nav>
+  <header class="hero" style=" background-image:var(--background1),url('../assets/estudio.jpg')">
+    <div class="container">
+      <section class="hero__container">
+        <div class="hero__texts">
+          <h1 class="hero__title">Mis estudios Superiores y Estudios Básicos</h1>
+          <h2 class="hero__subtitle">2017 - 2021</h2>
+          <a href="indexContacto.html" class="hero__cta">Contacto</a>
+        </div>
+      </section>
+    </div>
+    <div class="hero__wave" style=" overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #fff;"></path>
+      </svg></div>
+  </header>
+  <main>
+    <section class="presentation container">
+      <img src="icon/sdg.jpg" class="presentation__picture">
+      <h2 class="subtitle">I.E Santo Domingo de Guzmán - Las Flores, San Juan de Lurigancho</h2>
+      <p class="presentation__copy">
+        <ul>
+          <li>Estudié en este colegio particular durante 2 años</li>
+          <li>Fue en la secundaria, en 1er grado y 2do grado en el periodo de (2017-2018)</li>
+          <li>Fue en el año 2018 cuando me cambié de colegio a uno estatal.</li>
+        </ul>
+      </p>
+    </section>
+    <section class="presentation container">
+      <img src="icon/mario florian.jpg" class="presentation__picture">
+      <h2 class="subtitle">I.E Mario Florián UGEL N° 65 - Las Flores, San Juan de Lurigancho</h2>
+      <p class="presentation__copy">
+        <ul>
+          <li>Continué mis estudios secundarios en el colegio Mario Florián. 3ro, 4to y 5to.</li>
+          <li>En el año 2019 cuando estaba en 3er grado se secundaria, fue el útimo año presencial lamentablemente, ya que llegaría el Covid-19.</li>
+          <li>LLegado el año 2020, cuando estaba en 4to de secundaria, continuamos nuestro aprendizaje en modalidad virtual, y así fue hasta 2021. Fue cuando culminé mis estudios secundarios.</li>
+        </ul>
+      </p>
+    </section>
+    <section class="about container">
+      <div class="about__texts">
+        <h2 class="subtitle">SENATI</h2>
+        <p class="about__paragraph">
+          <ul>
+            <li>Me postule a SENATI a principios de Julio de 2022 para la carrera de Ingeniería de Software con Inteligencia Artificial.</li>
+            <li>La cual pude ingresar felizmente, y mis clases estaban destinadas para empezar  el 8 de Agosto de ese mismo año, en la modalidad virtual.</li>  
+            <li>En la actualidad, ya llevo 6 meses llenos de aprendizaje completo, práctico y teórico en el 2do Semestre que estoy.</li>
+          </ul>
+        </p>
+      </div>
+      <figure class="about__img">
+        <img src="icon/senati.jpg" width="500px" class="about__picture">
+      </figure>
+    </section>
+    
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <nav class="nav nav--footer">
+        <a href="indexInicio.html" class="nav__items nav__items--footer">Inicio</a>
+        <a href="indexEstudios.html" class="nav__items nav__items--footer">Estudios</a>
+        <a href="indexLaboral.html" class="nav__items nav__items--footer">Experiencia laboral</a>
+        <a href="indexContacto.html" class="nav__items nav__items--footer">Contáctame</a>
+      </nav>
+      
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+
+</html>
