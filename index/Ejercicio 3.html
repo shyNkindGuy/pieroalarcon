@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Ejercicio 3</title>
+    <style>
+        #formulario{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+        }
+</style>
+<div id="formulario">
+	<div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <!-- Agregar la clase "container" para asegurarse de que el menú esté centrado en la página -->
+            <div class="container">
+    
+                <!-- Agregar la clase "nav-pills" para dar estilo a los ítems de navegación -->
+                <ul class="navbar-nav nav-pills mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Menu Principal.html" target="_self">Menu Principal</a>
+                    </li>
+                    <!-- Agregar la clase "nav-item" al elemento "a" para crear los ítems de navegación -->
+                    <li class="nav-item">
+                        <!-- Agregar la clase "active" al elemento "a" para resaltar la página actual en el menú -->
+                        <a class="nav-link" href="Ejercicio 1.html" target="_self">Ejercicio 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ejercicio 2.html" target="_self">Ejercicio 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Ejercicio 3.html" target="_self">Ejercicio 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ejercicio 4.html" target="_self">Ejercicio 4</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title text-center">Calculadora de peso para niños</h1>
+			<form>
+				<div class="form-group">
+					<label for="edad">Edad del niño en años:</label>
+					<input type="number" id="edad" name="edad" class="form-control" required>
+				</div>
+				<button type="button" class="btn btn-primary" onclick="calcularPeso()">Calcular</button>
+			</form>
+			<p id="resultado" class="mt-3"></p>
+</div>
+
+	<script>
+		function calcularPeso() {
+			var edad = parseInt(document.getElementById("edad").value);
+			var peso = 3 * edad + 7;
+			document.getElementById("resultado").innerHTML = "El peso estimado del niño es: " + peso + " kg.";
+		}
+	</script>
+</div>
+
+</body>
+</html>
